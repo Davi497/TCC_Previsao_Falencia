@@ -18,7 +18,9 @@ TCC_Previsao_Falencia/
 │   ├── 02_modelagem_smote.py      # versão exploratória: aplicação do SMOTE
 │   ├── 03_pipeline_final.py       # análise final reportada no TCC
 │   └── 04_graficos.py             # Figuras 1 a 4 do TCC
-├── dados/                         # local dos arquivos .arff (não versionados)
+├── dados/
+│   ├── README.md                  # como obter os arquivos .arff (não versionados)
+│   └── variaveis.md               # definição das 64 variáveis explicativas
 ├── resultados/                    # criada pelo script 03 (resultados_v6.json)
 ├── figuras/                       # criada pelo script 04 (Figuras 1 a 4 do TCC)
 └── requirements.txt
@@ -67,6 +69,11 @@ Todas as etapas aleatórias utilizam semente fixa (`random_state = 42`).
 | Gradient Boosting – original (limiar 0,5) | 0,921 | 0,467 | 0,620 | 0,963 | 0,763 |
 | Gradient Boosting – SMOTE (limiar 0,5) | 0,431 | 0,751 | 0,547 | 0,956 | 0,707 |
 | Gradient Boosting – original (limiar ajustado 0,23) | 0,768 | 0,617 | 0,684 | 0,963 | 0,763 |
+
+## Variáveis
+
+A definição completa dos 64 indicadores financeiros, com a tradução adotada no TCC,
+está em [`dados/variaveis.md`](dados/variaveis.md).
 
 ## Fonte dos dados
 
